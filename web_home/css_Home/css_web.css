@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    height: 100vh;
+    flex-direction: column; /* Adiciona a orientação de coluna ao contêiner principal */
+}
+
+.container {
+    text-align: center;
+    margin-top: 20vh; /* Ajusta conforme necessário para definir a distância do topo */
+}
+
+
+.form-wrapper {
+text-align: center;
+
+}
+
+/* Adiciona um espaçamento entre os elementos do formulário */
+.form-wrapper .form-label {
+    margin-bottom: 8px;
+}
+
+/* Adiciona algum espaçamento ao redor do botão de envio */
+.form-wrapper .btn-primary {
+    margin-top: 10px;
+}
