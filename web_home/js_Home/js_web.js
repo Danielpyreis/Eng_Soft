@@ -10,6 +10,7 @@ function add(value) {
 
   function calculate() {
     const display = document.querySelector('.form-control');
-    const result = eval(display.value);
+    const strValue = new String(display.value).replace(/^0+/, "");
+    const result = eval(strValue);
     display.value = result;
   }
