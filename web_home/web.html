@@ -14,44 +14,67 @@
 <body>
   <div class="container">
     <h1>Seja Bem-vindo</h1>
+    <h3>Vamos Calcular?</h3>
   </div>
 
   <div class="form-wrapper">
-    <h3>Vamos Calcular?</h3>
-    <input type="display" class="form-control" placeholder="0">
+    <div class="box">
+    <input type="display" class="form-control" placeholder="0" readonly>
+  </div>
+
     <div>
       <button type="button" class="btn btn-primary" onclick="add('1')">1</button>
       <button type="button" class="btn btn-primary" onclick="add('2')">2</button>
       <button type="button" class="btn btn-primary" onclick="add('3')">3</button>
+      <button type="button" class="btn btn-primary" onclick="add('+')">+</button>
+
     </div>
 
     <div>
       <button type="button" class="btn btn-primary" onclick="add('4')">4</button>
       <button type="button" class="btn btn-primary" onclick="add('5')">5</button>
       <button type="button" class="btn btn-primary" onclick="add('6')">6</button>
+      <button type="button" class="btn btn-primary" onclick="add('-')">-</button>
+
     </div>
 
     <div>
       <button type="button" class="btn btn-primary" onclick="add('7')">7</button>
       <button type="button" class="btn btn-primary" onclick="add('8')">8</button>
       <button type="button" class="btn btn-primary" onclick="add('9')">9</button>
+      <button type="button" class="btn btn-primary" onclick="add('*')">*</button>
+
     </div>
 
     <div>
       <button type="button" class="btn btn-primary" onclick="clearDisplay()">C</button>
       <button type="button" class="btn btn-primary" onclick="add('0')">0</button>
       <button type="button" class="btn btn-primary" onclick="calculate()">=</button>
+      <button type="button" class="btn btn-primary" onclick="add('/')">/</button>
     </div>
     <div>
-      <button type="button" class="btn btn-primary" onclick="add('+')">+</button>
-      <button type="button" class="btn btn-primary" onclick="add('-')">-</button>
-      <button type="button" class="btn btn-primary" onclick="add('*')">*</button>
-      <button type="button" class="btn btn-primary" onclick="add('/')">/</button>
+      <button type="button" class="btn btn-primary" onclick="add('.')">.</button>
     </div>
 
   </div>
 
+<!-- Modal -->
+<div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Operação inválida</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        A operação não pode ser efetuada.
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
 </body>
 
 </html>
-
